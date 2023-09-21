@@ -1,0 +1,73 @@
+img {
+    width: 100%;
+}
+
+.info {
+    width: 66.75%;
+}
+
+.block1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Создаем два столбца, один для сайдбара, другой для header */
+    /*grid-gap: 10px; /* Отступ между блоками */
+    height: 100vh; /* Высота всего контейнера на весь видимый экран */
+}
+
+.barstory {
+    display: grid;
+    place-items: center;
+    background-color: lightgreen;
+}
+
+.barman {
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.story {
+    padding: 10px;
+    height: 100%;
+    background-color: rgb(178, 222, 252);
+}
+
+.menu {
+    width: 33.25%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: lightgreen;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #7b7b7d;
+    font-size: 18px;
+    transition: 0.25s;
+    margin: 10px;
+    padding: 60px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.menu a:hover,
+.menu a.selected{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgb(255, 132, 239);
+}
+
+.menu a:active {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgb(255, 57, 229);
+}
